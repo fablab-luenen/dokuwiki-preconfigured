@@ -14,25 +14,12 @@ This is a batteries included distribution of DokuWiki. Its goal is to provide a 
 
 ## Deployment using docker-compose
 
-Here's a basic docker-compose.yml you can use to get started:
+This repo contains a docker-compose.yml file you can use to get started. Just clone this repository and `docker-compose up`:
 
 ```
-version: '3.2'
-services:
-  wiki:
-    build: build/
-    ports:
-      - 80:80
-    restart: unless-stopped
-    volumes:
-      #- ./local.php:/config/dokuwiki/conf/local.php
-      #- ./data/:/app/dokuwiki/data # this is just cache?
-      #- ./local.php:/config/dokuwiki/conf/userstyle.css
-      - ./config/:/config/
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Berlin
+git clone https://github.com/fablab-luenen/dokuwiki-preconfigured
+cd dokuwiki-preconfigured
+docker-compose up -d
 ```
 
 ## To do
