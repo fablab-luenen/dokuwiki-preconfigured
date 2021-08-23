@@ -21,7 +21,7 @@ Here's a basic docker-compose.yml you can use to get started:
 version: '3.2'
 services:
   wiki:
-    image: ghcr.io/solarkraft/dokuwiki
+    build: build/
     ports:
       - 80:80
     restart: unless-stopped
