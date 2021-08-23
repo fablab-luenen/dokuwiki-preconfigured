@@ -12,6 +12,8 @@ This is a batteries included distribution of DokuWiki. Its goal is to provide a 
 - [Iframe plugin](http://www.dokuwiki.org/plugin:iframe)
 - Some sensible defaults (hierarchical breadcrumbs instead of a view history)
 
+![Installation speed run. The code block is run in and the availability of the Wiki shown](https://i.imgur.com/DxJvmRL.gif)
+
 ## Deployment using docker-compose
 
 This repo contains a docker-compose.yml file you can use to get started. Just clone this repository and `docker-compose up`:
