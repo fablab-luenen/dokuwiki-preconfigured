@@ -2,7 +2,7 @@ Hint: This readme is aspirational. Not much of this is real yet.
 
 # dokuwiki-preconfigured
 
-> You could stop at 5 or 6 stores - or just  one
+> You could stop at 5 or 6 stores - or just  one!
 
 This is a batteries included distribution of Dokuwiki. Its goal is to provide a super seamles user and setup experience. It comes with the following main features:
 
