@@ -1,4 +1,4 @@
-Hint: This readme is aspirational. Not much of this is real yet. 
+This readme is aspirational. Not much of this is real yet. 
 
 # dokuwiki-preconfigured
 
