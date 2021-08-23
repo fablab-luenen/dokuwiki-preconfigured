@@ -1,17 +1,16 @@
-This readme is aspirational. Not much of this is real yet. 
+The sub-project used in this projects are somewhat unfinished, but I would call the current state usable. 
 
 # dokuwiki-preconfigured
 
 > You could stop at 5 or 6 stores - or just  one!
 
-This is a batteries included distribution of Dokuwiki. Its goal is to provide a super seamles user and setup experience. It comes with the following main features:
+This is a batteries included distribution of DokuWiki. Its goal is to provide a super seamles user and setup experience. It comes with the following main features:
 
 - Pretty URLs enabled out of the box
 - [Krypton theme](https://github.com/FabLab-Luenen/dokuwiki-krypton) (based on Argon)
 - [Visual Editor](https://github.com/FabLab-Luenen/dokuwiki-visual-editor)
 - [Iframe plugin](http://www.dokuwiki.org/plugin:iframe)
-- [Style editor](https://www.dokuwiki.org/plugin:styling)
-- [Blog plugin](https://www.dokuwiki.org/plugin:blog)
+- Some sensible defaults (hierarchical breadcrumbs instead of a view history)
 
 ## Deployment using docker-compose
 
@@ -36,19 +35,13 @@ services:
       - TZ=Europe/Berlin
 ```
 
-## Caveats (in flux, double-check)
-
-This project replaces <abcd>.php with a custom one to change some settings. This file also includes other stuff and there is a chance that it will be different in a future version of DokuWiki. If something breaks, it’s probably here. 
-Alternatives like changing the settings programmatically are possible, but haven’t been decided to be worth it just yet, since it’s not expected to be a significant problem (but we will see).
-TEST: Placing in a LocalSettings.php doesn’t work, because it hinders the install.php from running. 
-
 ## To do
 
-- Revamp mounts to only include actually necessary stuff
-- separate config and data
-- Figure out volumes
-- Check methods of settings application 
-- Set settings: nice URLs+slashes, theme
+- Figure out volumes and mounts
+- Move docker-compose
+- Add suggested changes
+- Add configuration tutorial
+- Modify page edit strings
 
 ### New mounts
 
