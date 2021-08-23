@@ -4,9 +4,7 @@ ARG plugindir=/app/dokuwiki/lib/plugins/
 ARG themedir=/app/dokuwiki/lib/tpl/
 
 RUN \
- echo "Dokuwiki Plugins folder: " && ls $plugindir && \
  echo "**** install build packages 2 ****" && \ 
- echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies2 \
 	unzip && \
  echo "**** Downloading plugins ****" && \
@@ -25,10 +23,18 @@ RUN \
  curl -Ls https://github.com/FabLab-Luenen/dokuwiki-krypton/archive/master.zip --output /tmp/theme.zip && \
  echo "**** Extracting theme ****" && \
  unzip /tmp/theme.zip -d /tmp/theme && \
- echo "theme dir: " && ls /tmp/theme && \
  echo "**** Moving theme ****" && \
  mv /tmp/theme/*/ $themedir/krypton && \
  echo "Dokuwiki themes folder: " && ls $themedir/ && \
+ echo "**** Modifying settings ****" && \
+ sed -i /app/dokuwiki/conf/dokuwiki.php \
+   -e "s/$conf\['youarehere'\].*; /\['youarehere'\] = '1';/" `# Normal breadcrumbs` \
+   -e "s/$conf\['userewrite'\].*; /\['userewrite'\] = 1;  /" `# Nice URLs` \
+   -e "s/$conf\['useslash'\].*; /\['useslash'\] = 1;    /" `# Nice URLs` \
+   -e "s/$conf\['template'\].*; /\['template'\] = 'krypton';/" `# Theme` \
+   -e "s/$conf\['showuseras'\].*; /\['showuseras'\] = 'username';/" `# Show user as display name` \
+   -e "s/$conf\['title'\].*; /\['title'\] = 'My new Dokuwiki';/" `# Show user as display name` && \
+ grep "template" /app/dokuwiki/conf/dokuwiki.php && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies2 && \
