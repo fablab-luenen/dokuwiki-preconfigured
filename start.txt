@@ -1,0 +1,3 @@
+====== Welcome to your new DokuWiki! ======
+
+Your wiki is almost set up! Simply [[/install.php | finish the installation]] and log in. 

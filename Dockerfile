@@ -42,6 +42,9 @@ RUN \
 	/root/.cache \
 	/tmp/*
 
+# Welcome message
+COPY start.txt /app/dokuwiki/data/pages/start.txt
+
 # ports and volumes
 EXPOSE 80 443
 VOLUME /config
