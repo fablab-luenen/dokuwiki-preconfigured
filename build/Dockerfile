@@ -29,6 +29,7 @@ RUN \
  echo "**** Modifying settings ****" && \
  sed -i /app/dokuwiki/conf/dokuwiki.php \
    -e "s/$conf\['youarehere'\].*; /\['youarehere'\] = '1';/" `# Normal breadcrumbs` \
+   -e "s/$conf\['breadcrumbs'\].*; /\['breadcrumbs'\] = '0';/" `# Normal breadcrumbs (disable history)` \
    -e "s/$conf\['userewrite'\].*; /\['userewrite'\] = 1;  /" `# Nice URLs` \
    -e "s/$conf\['useslash'\].*; /\['useslash'\] = 1;    /" `# Nice URLs` \
    -e "s/$conf\['template'\].*; /\['template'\] = 'krypton';/" `# Theme` \
