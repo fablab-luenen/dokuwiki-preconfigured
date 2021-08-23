@@ -24,10 +24,13 @@ cd dokuwiki-preconfigured
 docker-compose up -d
 ```
 
+## Notes/Caveats
+
+The initially supported languages are`de-informal` and `en`. 
+
 ## To do
 
 - Figure out volumes and mounts
-- Move docker-compose
 - Add suggested changes
 - Add configuration tutorial
 - Modify page edit strings

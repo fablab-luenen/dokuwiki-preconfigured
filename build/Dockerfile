@@ -45,6 +45,8 @@ RUN \
 
 # Welcome message
 COPY start.txt /app/dokuwiki/data/pages/start.txt
+# Overriden UI strings
+COPY lang /app/dokuwiki/inc/lang
 
 # ports and volumes
 EXPOSE 80 443
