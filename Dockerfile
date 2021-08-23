@@ -1,9 +1,10 @@
 FROM ghcr.io/linuxserver/dokuwiki
 
 ARG plugindir=/app/dokuwiki/lib/plugins/
+ARG themedir=/app/dokuwiki/lib/tpl/
 
 RUN \
- echo "Dokuwiki Plugins folder: " && ls /app/dokuwiki/lib/plugins/ && \
+ echo "Dokuwiki Plugins folder: " && ls $plugindir && \
  echo "**** install build packages 2 ****" && \ 
  echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies2 \
@@ -13,7 +14,7 @@ RUN \
  echo "**** Extracting plugins ****" && \
  unzip /tmp/*.zip -d /tmp/plugins && \
  echo "Tmp plugin dir: " && ls /tmp/plugins && \
- echo "DW plugin dir: " && ls /app/dokuwiki/lib/plugins/ && \
+ echo "DW plugin dir: " && ls $plugindir && \
  echo "**** Moving plugins ****" && \
  mv /tmp/plugins/dokuwiki-plugin-iframe-master $plugindir/iframe && \
  echo "Dokuwiki Plugins folder after move: " && ls $plugindir && \
@@ -23,8 +24,8 @@ RUN \
  unzip /tmp/theme.zip -d /tmp/theme && \
  echo "theme dir: " && ls /tmp/theme && \
  echo "**** Moving theme ****" && \
- mv /tmp/theme/*/ /app/dokuwiki/lib/tpl/krypton && \
- echo "Dokuwiki themes folder: " && ls /app/dokuwiki/lib/tpl/ && \
+ mv /tmp/theme/*/ $themedir/krypton && \
+ echo "Dokuwiki themes folder: " && ls $themedir/ && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies2 && \
