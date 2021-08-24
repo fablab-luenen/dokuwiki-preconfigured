@@ -34,7 +34,8 @@ RUN \
    -e "s/$conf\['useslash'\].*; /\['useslash'\] = 1;    /" `# Nice URLs` \
    -e "s/$conf\['template'\].*; /\['template'\] = 'krypton';/" `# Theme` \
    -e "s/$conf\['showuseras'\].*; /\['showuseras'\] = 'username';/" `# Show user as display name` \
-   -e "s/$conf\['title'\].*; /\['title'\] = 'My new Dokuwiki';/" `# Show user as display name` && \
+   -e "s/$conf\['title'\].*; /\['title'\] = 'My new Dokuwiki';/" `# Initial wiki name` \
+   -e "s/$conf\['deaccent'\].*; /\['deaccent'\] = 2;/" `# Romanize page names` && \
  grep "template" /app/dokuwiki/conf/dokuwiki.php && \
  echo "**** cleanup ****" && \
  apk del --purge \
