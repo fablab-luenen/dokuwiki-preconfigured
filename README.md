@@ -33,7 +33,6 @@ The initially supported languages are`de-informal` and `en`.
 - Figure out volumes and mounts
 - Add suggested changes
 - Add configuration tutorial
-- Modify page edit strings
 
 ### New mounts
 
