@@ -33,6 +33,7 @@ The initially supported languages are`de-informal` and `en`.
 - Figure out volumes and mounts
 - Add suggested changes
 - Add configuration tutorial
+- Consider using the (experimental) [official docker image](https://github.com/splitbrain/dokuwiki/blob/docker/docker/README.md)
 
 ### New mounts
 
