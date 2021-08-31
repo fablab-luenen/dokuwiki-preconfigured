@@ -24,24 +24,17 @@ cd dokuwiki-preconfigured
 docker-compose up -d
 ```
 
+## Goals
+
+The over-arching goal of this distribution is to establish a great alternative to proprietary wikis (namely Confluence). This translates into the following goals:
+
+- Usability (UX design/placement of buttons and menus to be in line with modern wikis)
+- Clean styling
+- Easy set-up
+
 ## Notes/Caveats
 
 The initially supported languages are`de-informal` and `en`. 
-
-## To do
-
-- Figure out volumes and mounts
-- Add suggested changes
-- Add configuration tutorial
-- Consider using the (experimental) [official docker image](https://github.com/splitbrain/dokuwiki/blob/docker/docker/README.md)
-
-### New mounts
-
-- config/dokuwiki/conf/
-- config/dokuwiki/data/
-- config/dokuwiki/lib/ -> volume?
-
-The others don't seem all that relevant. Should perhaps be mounted on demand. 
 
 ## Thanks
 
