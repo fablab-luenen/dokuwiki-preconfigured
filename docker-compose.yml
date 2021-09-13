@@ -9,6 +9,8 @@ services:
     volumes:
       # Your dokuwiki data, mapped into the data folder
       - ./data/:/config/
+      # Volume to speed up startup on certain systems
+      - /app/
     environment:
       - PUID=1000
       - PGID=1000
