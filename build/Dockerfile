@@ -20,7 +20,7 @@ RUN \
  mv /tmp/plugins/*dokuwiki-visual-editor* $plugindir/prosemirror && \
  echo "Dokuwiki Plugins folder after move: " && ls $plugindir && \
  echo "**** Downloading theme ****" && \
- curl -Ls https://github.com/FabLab-Luenen/dokuwiki-krypton/archive/master.zip --output /tmp/theme.zip && \
+ curl -Ls https://github.com/FabLab-Luenen/dokuwiki-krypton/archive/krypton.zip --output /tmp/theme.zip && \
  echo "**** Extracting theme ****" && \
  unzip /tmp/theme.zip -d /tmp/theme && \
  echo "**** Moving theme ****" && \
