@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+set -e
+
+./stop
+./backup
+
+echo "Tearing down your previous installation"
+docker-compose down
+rm -r data/* || true
+
+./restore
+
+echo "Building your new & improved Dokuwiki"
+docker build build/
+
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+echo "${GREEN}Your Dokuwiki has been upgraded. ${NC}"

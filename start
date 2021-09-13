@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+set -e
+
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+mkdir -p data
+docker-compose up -d
+
+echo "${GREEN}Your Dokuwiki should be up in a few seconds${NC}"
+echo "If you didn't make any changes, it should be available at ${BLUE}http://localhost:8080${NC}."

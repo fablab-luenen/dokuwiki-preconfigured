@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+set -e
+
+./stop
+backup_folder="backups"
+data_path="data"
+backup_paths=("dokuwiki/conf" "dokuwiki/data")
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Use provided backup name
+if [ -z ${1+x} ]; then 
+    backup=$backup_folder/`date +%Y-%m-%d-%T`
+else
+    backup=$backup_folder/$1
+fi
+
+mkdir -p $backup_folder
+mkdir $backup
+
+for i in "${backup_paths[@]}"; do
+    echo "Backing up $i"
+    [[ -d "$i" ]] && mkdir -p $backup/$i
+    cp -r $data_path/$i/ $backup/$i/
+done
+
+echo "${GREEN}Backed up your Dokuwiki to ${BLUE}${backup}${NC}"
