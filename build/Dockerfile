@@ -37,6 +37,7 @@ RUN \
    -e "s/$conf\['title'\].*; /\['title'\] = 'My new Dokuwiki';/" `# Initial wiki name` \
    -e "s/$conf\['deaccent'\].*; /\['deaccent'\] = 2;/" `# Romanize page names` \
       -e "s/$conf\['dformat'\].*; /\['dformat'\] = '%Y-%m-%d %H:%M';/" `# ISO-Style date` && \
+ echo "svg    image/svg+xml" >> /app/dokuwiki/conf/mime.conf && \
  grep "template" /app/dokuwiki/conf/dokuwiki.php && \
  echo "**** cleanup ****" && \
  apk del --purge \
