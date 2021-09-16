@@ -6,10 +6,10 @@ Work is ongoing. While I think it's already a good improvement on the Dokuwiki e
 
 This is a batteries included distribution of DokuWiki. Its goal is to provide a super seamles user and setup experience. It comes with the following main features:
 
-- [Krypton theme](https://github.com/FabLab-Luenen/dokuwiki-krypton) (based on Argon)
+- [Krypton Theme](https://github.com/FabLab-Luenen/dokuwiki-krypton)
 - [Visual Editor](https://github.com/FabLab-Luenen/dokuwiki-visual-editor)
-- [Iframe plugin](http://www.dokuwiki.org/plugin:iframe)
-- Some sensible defaults (hierarchical breadcrumbs instead of a view history, pretty URLs, SVG allowed media format)
+- More sensible defaults (hierarchical breadcrumbs instead of a view history, pretty URLs, SVG allowed media format)
+- A bunch of useful plugins (iframe, more to come)
 
 ![Installation speed run. The code block is run in and the availability of the Wiki shown](https://i.imgur.com/DxJvmRL.gif)
 
