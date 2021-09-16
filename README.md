@@ -1,4 +1,4 @@
-The sub-project used in this projects are somewhat unfinished, but I would call the current state usable. 
+Work is ongoing. While I think it's already a good improvement on the Dokuwiki experience, there's still a lot to do. 
 
 # dokuwiki-preconfigured
 
