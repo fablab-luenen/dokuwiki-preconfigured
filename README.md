@@ -1,4 +1,4 @@
-Work is ongoing. While I think it's already a good improvement on the Dokuwiki experience, there's still a lot to do. 
+Work is ongoing. Check [Status](#status). 
 
 # dokuwiki-preconfigured
 
@@ -38,6 +38,10 @@ The general goal of this distribution is to establish a great alternative to pro
 - While some care is taken to keep it usable JS-lessly, some things depend on Javascript (Visual Editor, Quick Search, Page dropdown [to be changed])
 - Support for old browsers is an explicit non-goal. Miss me with that IE9 (I sometimes test on Safari, though). 
 - Mobile/Narrow screen support is currently not great (no changes over Argon). It's a bit further down on the list of priorities. 
+
+## Status
+
+While I think it's already a good improvement on the Dokuwiki experience, there's still a lot to do. The preview is probably outdated. Check out Issues, PRs, Discussions and Commits of the sub-projects for updates.  
 
 ## Thanks
 
