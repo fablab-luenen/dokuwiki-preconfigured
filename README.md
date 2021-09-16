@@ -34,7 +34,9 @@ The over-arching goal of this distribution is to establish a great alternative t
 
 ## Notes/Caveats
 
-The initially supported languages are`de-informal` and `en`. 
+- The initially supported languages are`de-informal` and `en`
+- While some care is taken to keep it usable JS-lessly, some things depend on Javascript
+- Support for old browsers is an explicit non-goal
 
 ## Thanks
 
