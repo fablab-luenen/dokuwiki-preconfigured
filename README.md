@@ -4,7 +4,7 @@ Work is ongoing. While I think it's already a good improvement on the Dokuwiki e
 
 > You could stop at 5 or 6 stores - or just  one!
 
-This is a batteries included distribution of DokuWiki. Its goal is to provide a super seamles user and setup experience. It comes with the following main features:
+This is a batteries included distribution of DokuWiki. Its goal is to provide a super seamles setup and user experience. It comes with the following main features:
 
 - [Krypton Theme](https://github.com/FabLab-Luenen/dokuwiki-krypton)
 - [Visual Editor](https://github.com/FabLab-Luenen/dokuwiki-visual-editor)
@@ -26,13 +26,13 @@ docker-compose up -d
 
 ## Goals
 
-The over-arching goal of this distribution is to establish a great alternative to proprietary wikis (namely Confluence). This translates into the following goals:
+The general goal of this distribution is to establish a great alternative to proprietary wikis (namely Confluence). This translates into the following main points:
 
-- Usability (UX design/placement of buttons and menus to be in line with modern wikis)
-- Clean styling
-- Easy set-up
+- Ease of use (UX design/placement of buttons and menus)
+- Clean styling (low clutter)
+- Easy setup
 
-## Notes/Caveats
+## Caveats
 
 - The initially supported languages are`de-informal` and `en`
 - While some care is taken to keep it usable JS-lessly, some things depend on Javascript (Visual Editor, Quick Search, Page dropdown [to be changed])
