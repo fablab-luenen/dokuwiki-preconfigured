@@ -35,7 +35,7 @@ The over-arching goal of this distribution is to establish a great alternative t
 ## Notes/Caveats
 
 - The initially supported languages are`de-informal` and `en`
-- While some care is taken to keep it usable JS-lessly, some things depend on Javascript
+- While some care is taken to keep it usable JS-lessly, some things depend on Javascript (Visual Editor, Quick Search, Page dropdown [to be changed])
 - Support for old browsers is an explicit non-goal. Miss me with that IE9 (I sometimes test on Safari, though). 
 - Mobile/Narrow screen support is currently not great (no changes over Argon). It's a bit further down on the list of priorities. 
 
