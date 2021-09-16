@@ -6,11 +6,10 @@ Work is ongoing. While I think it's already a good improvement on the Dokuwiki e
 
 This is a batteries included distribution of DokuWiki. Its goal is to provide a super seamles user and setup experience. It comes with the following main features:
 
-- Pretty URLs enabled out of the box
 - [Krypton theme](https://github.com/FabLab-Luenen/dokuwiki-krypton) (based on Argon)
 - [Visual Editor](https://github.com/FabLab-Luenen/dokuwiki-visual-editor)
 - [Iframe plugin](http://www.dokuwiki.org/plugin:iframe)
-- Some sensible defaults (hierarchical breadcrumbs instead of a view history)
+- Some sensible defaults (hierarchical breadcrumbs instead of a view history, pretty URLs, SVG allowed media format)
 
 ![Installation speed run. The code block is run in and the availability of the Wiki shown](https://i.imgur.com/DxJvmRL.gif)
 
@@ -21,6 +20,7 @@ This repo contains a docker-compose.yml file you can use to get started. Just cl
 ```
 git clone https://github.com/fablab-luenen/dokuwiki-preconfigured
 cd dokuwiki-preconfigured
+mkdir data
 docker-compose up -d
 ```
 
