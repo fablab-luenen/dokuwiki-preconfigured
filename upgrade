@@ -1,19 +1,26 @@
 #!/usr/bin/env sh
 set -e
 
+echo "Upgrade your Dokuwiki? Your pages will be backed up and restored. Your installed plugins and some other data may be lost in the process. "
+echo "Press enter to continue or ctrl+c to cancel. "
+read
+
 ./stop
 ./backup
+
 
 echo "Tearing down your previous installation"
 docker-compose down
 rm -r data/* || true
 
-./restore
-
 echo "Building your new & improved Dokuwiki"
-docker build build/
+docker build build/ --pull
+
+./restore
 
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 echo "${GREEN}Your Dokuwiki has been upgraded. ${NC}"
+
+./start
