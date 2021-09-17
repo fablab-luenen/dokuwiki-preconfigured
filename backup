@@ -3,7 +3,7 @@ source .environment
 
 backup_folder="backups"
 data_path="data"
-backup_paths=("dokuwiki/conf" "dokuwiki/data")
+backup_paths=("conf" "data")
 
 # Use provided backup name
 if [ -z ${1+x} ]; then 
@@ -18,7 +18,7 @@ mkdir $backup
 for i in "${backup_paths[@]}"; do
     echo "Backing up $i"
     mkdir -p $backup/$i
-    cp -R $data_path/$i/ $backup/$i/
+    cp -R $data_path/dokuwiki/$i/ $backup/$i/
 done
 
 echo -e "${GREEN}Backed up your Dokuwiki to ${BLUE}${backup}${NC}"
