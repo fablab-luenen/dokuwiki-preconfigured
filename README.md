@@ -20,8 +20,7 @@ This repo contains a docker-compose.yml file you can use to get started. Just cl
 ```
 git clone https://github.com/fablab-luenen/dokuwiki-preconfigured
 cd dokuwiki-preconfigured
-mkdir data
-docker-compose up -d
+./start
 ```
 
 ## Goals
