@@ -5,7 +5,15 @@ GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-mkdir -p data
+# Only act if the container isn't already running
+if [ `docker-compose ps -q` != "not found" ]; then
+    echo "${GREEN}Your Dokuwiki is already running! :-)${NC}" # Or there was a change in the docker-compose CLI. Oops!
+    exit 0
+fi
+
+# Clean up old container
+docker-compose down
+
 docker-compose up -d
 
 echo "${GREEN}Your Dokuwiki should be up in a few seconds${NC}"
