@@ -5,7 +5,13 @@ echo "Upgrade your Dokuwiki? Your pages will be backed up and restored. Your ins
 echo "Press enter to continue or ctrl+c to cancel. "
 read
 
-./stop
+# Stop container if it is running
+restart_container=false
+if [ `docker-compose ps -q` == "not found" ]; then
+    start_container
+    restart_container=true
+fi
+
 ./backup
 
 
@@ -23,4 +29,9 @@ NC='\033[0m' # No Color
 
 echo "${GREEN}Your Dokuwiki has been upgraded. ${NC}"
 
-./start
+# Start the container if it was runnng before
+restart_container=false
+if [ restart_container  ]; then
+    echo "Starting your Dokuwiki again"
+    ./start
+fi
