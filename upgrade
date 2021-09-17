@@ -24,7 +24,7 @@ docker build build/ --pull
 
 ./restore
 
-echo "${GREEN}Your Dokuwiki has been upgraded. ${NC}"
+echo -e "${GREEN}Your Dokuwiki has been upgraded. ${NC}"
 
 # Start the container if it was runnng before
 restart_container=false

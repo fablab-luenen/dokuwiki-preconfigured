@@ -11,11 +11,11 @@ else
     backup=$1
 fi
 
-echo "Do you want to restore the backup ${BLUE}${backup}${NC}? ${RED}This will lead to the loss of the data currently in your wiki${NC}. "
+echo -e "Do you want to restore the backup ${BLUE}${backup}${NC}? ${RED}This will lead to the loss of the data currently in your wiki${NC}. "
 echo "Press enter to continue or ctrl+c to cancel. "
 read REPLY
 
 echo "Restoring backup $backup"
 cp -R $backup_folder/$backup/* $data_folder/
 
-echo "${GREEN}Backup ${BLUE}${backup}${NC} has been restored"
+echo -e "${GREEN}Backup ${BLUE}${backup}${NC} has been restored"

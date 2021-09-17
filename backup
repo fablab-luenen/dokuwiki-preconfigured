@@ -21,4 +21,4 @@ for i in "${backup_paths[@]}"; do
     cp -R $data_path/$i/ $backup/$i/
 done
 
-echo "${GREEN}Backed up your Dokuwiki to ${BLUE}${backup}${NC}"
+echo -e "${GREEN}Backed up your Dokuwiki to ${BLUE}${backup}${NC}"

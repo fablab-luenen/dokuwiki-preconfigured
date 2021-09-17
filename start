@@ -3,7 +3,7 @@ source .environment
 
 # Only act if the container isn't already running
 if ./.is-running; then
-    echo "${GREEN}Your Dokuwiki is already running! :-)${NC}" # Or there was a change in the docker-compose CLI. Oops!
+    echo -e "${GREEN}Your Dokuwiki is already running! :-)${NC}" # Or there was a change in the docker-compose CLI. Oops!
     exit 0
 fi
 
@@ -12,5 +12,5 @@ docker-compose down
 
 docker-compose up -d
 
-echo "${GREEN}Your Dokuwiki should be up in a few seconds${NC}"
-echo "If you didn't make any changes, it should be available at ${BLUE}http://localhost:8080${NC}."
+echo -e "${GREEN}Your Dokuwiki should be up in a few seconds${NC}"
+echo -e "If you didn't make any changes, it should be available at ${BLUE}http://localhost:8080${NC}."
