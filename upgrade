@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -e
 
 echo "Upgrade your Dokuwiki? Your pages will be backed up and restored. Your installed plugins and some other data may be lost in the process. "
