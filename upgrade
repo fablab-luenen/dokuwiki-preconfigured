@@ -8,8 +8,9 @@ read
 # Stop container if it is running
 restart_container=false
 if ./.is-running; then
-    start_container
+    "Stopping your Dokuwiki"
     restart_container=true
+    ./stop
 fi
 
 ./backup
@@ -31,7 +32,7 @@ echo "${GREEN}Your Dokuwiki has been upgraded. ${NC}"
 
 # Start the container if it was runnng before
 restart_container=false
-if [ restart_container  ]; then
+if [ $restart_container == true ]; then
     echo "Starting your Dokuwiki again"
     ./start
 fi
