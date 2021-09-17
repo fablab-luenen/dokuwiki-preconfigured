@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-set -e
+source .environment
 
 docker-compose ps | grep -q "running"

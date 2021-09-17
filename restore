@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+source .environment
 
 backup_folder="backups"
 data_folder="data"
@@ -10,11 +10,6 @@ if [ -z ${1+x} ]; then
 else
     backup=$1
 fi
-
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
 
 echo "Do you want to restore the backup ${BLUE}${backup}${NC}? ${RED}This will lead to the loss of the data currently in your wiki${NC}. "
 echo "Press enter to continue or ctrl+c to cancel. "

@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-set -e
-
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+source .environment
 
 # Only act if the container isn't already running
 if ./.is-running; then

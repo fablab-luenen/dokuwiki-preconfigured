@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
-set -e
+source .environment
 
 backup_folder="backups"
 data_path="data"
 backup_paths=("dokuwiki/conf" "dokuwiki/data")
-
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
 
 # Use provided backup name
 if [ -z ${1+x} ]; then 
