@@ -6,7 +6,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Only act if the container isn't already running
-if [ `docker-compose ps -q` != "not found" ]; then
+if ./.is-running; then
     echo "${GREEN}Your Dokuwiki is already running! :-)${NC}" # Or there was a change in the docker-compose CLI. Oops!
     exit 0
 fi

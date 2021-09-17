@@ -7,7 +7,7 @@ read
 
 # Stop container if it is running
 restart_container=false
-if [ `docker-compose ps -q` == "not found" ]; then
+if ./.is-running; then
     start_container
     restart_container=true
 fi
