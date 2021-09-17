@@ -1,15 +1,4 @@
 #!/usr/bin/env bash
 set -e
 
-# Get container name
-#container_name="wiki"
-#echo "Container name" $container_name
-
-# Only act if the container isn't already running
-#if [ -z `docker-compose ps -q $container_name` ] || [ -z `docker ps -q --no-trunc | grep $(docker-compose ps -q $container_name)` ]; then
-#    echo true
-#else
-#    echo false
-#fi
-
 docker-compose ps | grep -q "running"
