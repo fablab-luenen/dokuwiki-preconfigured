@@ -3,7 +3,7 @@ set -e
 
 echo "Upgrade your Dokuwiki? Your pages will be backed up and restored. Your installed plugins and some other data may be lost in the process. "
 echo "Press enter to continue or ctrl+c to cancel. "
-read
+read REPLY
 
 # Stop container if it is running
 restart_container=false
