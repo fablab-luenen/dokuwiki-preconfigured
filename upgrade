@@ -8,7 +8,7 @@ read REPLY
 # Stop container if it is running
 restart_container=false
 if ./.is-running; then
-    "Stopping your Dokuwiki"
+    echo "Stopping your Dokuwiki"
     restart_container=true
     ./stop
 fi
