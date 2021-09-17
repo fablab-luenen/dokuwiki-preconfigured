@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 set -e
 
-./stop
 backup_folder="backups"
 data_path="data"
 backup_paths=("dokuwiki/conf" "dokuwiki/data")
@@ -23,8 +22,8 @@ mkdir $backup
 
 for i in "${backup_paths[@]}"; do
     echo "Backing up $i"
-    [[ -d "$i" ]] && mkdir -p $backup/$i
-    cp -r $data_path/$i/ $backup/$i/
+    mkdir -p $backup/$i
+    cp -R $data_path/$i/ $backup/$i/
 done
 
 echo "${GREEN}Backed up your Dokuwiki to ${BLUE}${backup}${NC}"

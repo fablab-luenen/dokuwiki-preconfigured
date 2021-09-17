@@ -16,9 +16,11 @@ GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-[ "$(ls data)" ] && echo "${RED}The data folder is not empty!${NC} Operation aborted to prevent data loss. " && exit 1
+echo "Do you want to restore the backup ${BLUE}${backup}${NC}? ${RED}This will lead to the loss of the data currently in your wiki${NC}. "
+echo "Press enter to continue or ctrl+c to cancel. "
+read
 
 echo "Restoring backup $backup"
-cp -r $backup_folder/$backup/* $data_folder/
+cp -R $backup_folder/$backup/* $data_folder/
 
 echo "${GREEN}Backup ${BLUE}${backup}${NC} has been restored"
