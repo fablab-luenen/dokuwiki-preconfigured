@@ -16,6 +16,7 @@ echo "Press enter to continue or ctrl+c to cancel. "
 read REPLY
 
 echo "Restoring backup $backup"
-cp -R $backup_folder/$backup/* $data_folder/
+mkdir -p $data_folder/dokuwiki
+cp -R $backup_folder/$backup/* $data_folder/dokuwiki
 
 echo -e "${GREEN}Backup ${BLUE}${backup}${NC} has been restored"
