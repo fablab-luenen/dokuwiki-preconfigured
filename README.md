@@ -4,12 +4,14 @@ Work is ongoing. Check [Status](#status).
 
 > You could stop at 5 or 6 stores - or just  one!
 
-This is a batteries included distribution of DokuWiki. Its goal is to provide a super seamles setup and user experience. It comes with the following main features:
+This is a batteries included distribution of DokuWiki. Its goal is to provide a super seamles setup and user experience. The main components are: 
 
-- [Krypton Theme](https://github.com/FabLab-Luenen/dokuwiki-krypton)
-- [Visual Editor](https://github.com/FabLab-Luenen/dokuwiki-visual-editor)
-- More sensible defaults (hierarchical breadcrumbs instead of a view history, pretty URLs, SVG allowed media format)
-- A bunch of useful plugins (iframe, more to come)
+- More sensible defaults (hierarchical breadcrumbs instead of a view history, pretty URLs, SVG as allowed media format)
+- Some useful plugins
+- docker-compose file
+- Some scripts for common operations (backup/restore, use not required)
+- [Krypton](https://github.com/FabLab-Luenen/dokuwiki-krypton) theme (polished version of the [Argon](https://www.dokuwiki.org/template:argon) theme)
+- Polished up [Visual Editor](https://github.com/FabLab-Luenen/dokuwiki-visual-editor)
 
 ![Installation speed run. The code block is run in and the availability of the Wiki shown](https://i.imgur.com/DxJvmRL.gif)
 
