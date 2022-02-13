@@ -1,17 +1,17 @@
-Work is ongoing. Check [Status](#status). 
-
 # dokuwiki-preconfigured
 
 > You could stop at 5 or 6 stores - or just  one!
 
-This is a batteries included distribution of DokuWiki. Its goal is to provide a super seamles setup and user experience. The main components are: 
+This is the umbrella project for a "batteries included" distribution of DokuWiki. Its goal is to provide a seamless setup and user experience. Its main components are: 
 
+- A docker-compose file
+- Some scripts for common operations (backup/restore, use not required)
 - More sensible defaults (hierarchical breadcrumbs instead of a view history, pretty URLs, SVG as allowed media format)
 - Some useful plugins
-- docker-compose file
-- Some scripts for common operations (backup/restore, use not required)
 - [Krypton](https://github.com/FabLab-Luenen/dokuwiki-krypton) theme (polished version of the [Argon](https://www.dokuwiki.org/template:argon) theme)
 - Polished up [Visual Editor](https://github.com/FabLab-Luenen/dokuwiki-visual-editor)
+
+Work is ongoing. Check [Status](#status) for updates. 
 
 ![Installation speed run. The code block is run in and the availability of the Wiki shown](https://i.imgur.com/DxJvmRL.gif)
 
