@@ -40,7 +40,9 @@ The general goal of this distribution is to establish a great alternative to pro
 
 ## Status
 
-While there's still a lot to do, I think it's already a good improvement on the Dokuwiki experience. The preview is probably outdated. Check out Issues, PRs, [Discussions](https://github.com/fablab-luenen/dokuwiki-preconfigured/discussions/18) and Commits of the sub-projects for updates.  
+Lately (2022-02-13) the contributions have slowed a little because the Wiki is now in active use and in a state I consider close to "good enough". 
+
+While there's still a lot to do to perfect the experience, I think it's already quite an improvement. Check out issues, PRs, [Discussions](https://github.com/fablab-luenen/dokuwiki-preconfigured/discussions/18) and commits of the sub-projects for updates. The preview on this page may be outdated. 
 
 ## Thanks
 
