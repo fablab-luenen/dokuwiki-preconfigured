@@ -52,4 +52,4 @@ Thank you to everyone who originally made the projects used in this distribution
 - Linuxserver.io for making the [base image](https://github.com/linuxserver/docker-dokuwiki)
 - Cosmocode for making the [visual editor](https://github.com/cosmocode/dokuwiki-plugin-prosemirror)
 - IceWreck, SoarinFerret, llune for creating the [Argon theme](https://github.com/IceWreck/Argon-Dokuwiki-Template)
-- Myself (solarkraft) for the polishing effort. Hehe. 
+- Myself (solarkraft) for the polishing effort ;-)
