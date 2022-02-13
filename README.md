@@ -29,7 +29,7 @@ The first time it's run it will start a docker build, which inolves pulling the 
 
 ## Goals
 
-The general goal of this distribution is to establish a great alternative to proprietary wikis (namely Confluence). This translates into the following main points:
+The general goal of this distribution is to establish a good alternative to proprietary wikis (namely Confluence). This translates into the following main goals:
 
 - Ease of use (UX design/placement of buttons and menus)
 - Clean styling (low clutter)
