@@ -38,6 +38,9 @@ The general goal of this distribution is to establish a good alternative to prop
 ## Caveats
 
 - The initially supported languages are `de-informal` and `en`
+- It lacks a good name. Do you have an idea? [Let me know](https://github.com/fablab-luenen/dokuwiki-preconfigured/discussions/34)!
+
+See [Krypton issues](https://github.com/fablab-luenen/dokuwiki-krypton/issues) and [Visual Editor issues](https://github.com/fablab-luenen/dokuwiki-visual-editor/issues), as well as the issues of the projects they're based on. 
 
 ## Status
 
