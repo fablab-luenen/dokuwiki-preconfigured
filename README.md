@@ -25,6 +25,8 @@ cd dokuwiki-preconfigured
 ./start
 ```
 
+The first time it's run it will start a docker build, which inolves pulling the [base image linuxserver/docker-dokuwiki](https://github.com/linuxserver/docker-dokuwiki) and doing some modifications on top of it. 
+
 ## Goals
 
 The general goal of this distribution is to establish a great alternative to proprietary wikis (namely Confluence). This translates into the following main points:
